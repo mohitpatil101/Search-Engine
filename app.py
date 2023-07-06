@@ -125,9 +125,9 @@ def calculate_sorted_order_of_documents(query_terms):
     return ans
 
 class SearchForm(FlaskForm):
-    search = StringField('ENTER YOUR SEARCH TERM')
-    num_questions = SelectField('NUMBER OF QUESTIONS', choices=[('5', '5'), ('10', '10'), ('15', '15'), ('20', '20')])
-    submit = SubmitField('SEARCH')
+    search = StringField('Enter Search parameter')
+    num_questions = SelectField('Count of questions', choices=[ ('10', '10'), ('20', '20')])
+    submit = SubmitField('Submit')
 
 
 @app.route("/", methods=['GET', 'POST'])

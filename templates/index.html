@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>🔎SearchHive</title>
+  <title>Search Engine Portal</title>
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> 
@@ -11,7 +11,7 @@
       height: 100%;
       margin: 0;
       padding: 0;
-      background: url('https://media.istockphoto.com/id/1390647151/photo/abstract-technology-background-big-data-digital-code-futuristic-dots-background-3d-rendering.webp?b=1&s=170667a&w=0&k=20&c=kfGdOkhaPrqyFYEdIz7H9oz97YLqlfRGEnc3752QIMQ=.jpg') no-repeat center center fixed;  /* adjust URL as needed */
+      background: url('https://png.pngtree.com/background/20210710/original/pngtree-vector-electronic-tech-golden-background-picture-image_1022264.jpg') no-repeat center center fixed;  /* adjust URL as needed */
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -30,17 +30,10 @@
       transition: color 0.3s ease;
     }
 
-    h1:hover {
-      color: #bee441;
-    }
-
-    h2:hover {
-      color: #fefefe;
-    }
 
     /* Header */
     header {
-      background-color: black;
+      background-color: rgb(19, 6, 64);
       padding: 20px;
       text-align: center;
       color: white;
@@ -50,28 +43,6 @@
       font-size: 30px;
       font-weight: bold;
       margin: 0;
-    }
-
-    /* Footer */
-    footer {
-      background-color: black;
-      padding: 10px;
-      text-align: center;
-      color: #f8f9fa;
-    }
-
-    footer a {
-      color: #f8f9fa;
-      margin-right: 10px;
-    }
-
-    .social-icons {
-      margin-top: 10px;
-    }
-
-    .social-icons a {
-      margin-right: 5px;
-      font-size: 20px;
     }
 
     .container {
@@ -91,7 +62,7 @@
       width: 100%;
       padding: 20px;
       /*background-color: #7acae0;*/
-      background-color: #37aae4;
+      background-color: #7cc4d8;
       border: 1px solid #0b0b0b;
       border-radius: 5px;
       margin-bottom: 20px;
@@ -114,7 +85,7 @@
     }
     .card:hover {
       /*transform: scale(1.2);*/
-      background-color: #97FFFF;
+      background-color: #4fc47a;
       transform: translateY(+2px);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       /*background-color: beige;*/
@@ -129,17 +100,17 @@
     }
 
     .card-title a:hover {
-      color: #0d20f2;
+      color: #85ad61;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>SearchHive🛃</h1>
+    <h1>Search Engine Portal</h1>
   </header>
   <div class="container">
     <div class="form text-center">
-      <h2>SEARCH ENGINE</h2>
+      <h2>Search portal</h2>
       <form method="POST">
         {{ form.hidden_tag() }}
         <div class="form-group">
@@ -151,7 +122,7 @@
           {{ form.num_questions(class="form-control text-center")}}
         </div>
         <div class="text-center">
-          {{ form.submit(class="btn btn-outline-dark") }}
+          {{ form.submit(class="btn btn-dark") }}
         </div>
       </form>
     </div>
@@ -169,14 +140,5 @@
       </div>
     </div>
   </div>
-
-  <footer>
-    <p>&copy; 2023 SearchHive | 
-      <a href="mailto:rushisurya2705@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
-      <a href="https://github.com/rushisurya2705" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/rushikesh-suryavanshi-028921221" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://www.instagram.com/rushisurya2705" target="_blank"><i class="fab fa-instagram"></i></a>
-    </p>
-  </footer>
 </body>
 </html>
