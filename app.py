@@ -140,7 +140,7 @@ def home():
         num_questions = int(form.num_questions.data)
         results = calculate_sorted_order_of_documents(q_terms)[:num_questions]
 
-    return render_template('index.html', form=form, results=results)
+    return render_template('temp.html', form=form, results=results)
 
 
 if __name__ == '__main__':
